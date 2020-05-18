@@ -106,7 +106,7 @@ namespace MVCTestingSample.Controllers.Tests
             var controller = new ProductsController(mockRepo.Object);
             var invalidProduct = new Product()
             {
-                Name = null, //Name is required for MOdel State to be valid
+                Name = string.Empty,
                 Price = "9.99",
                 ProductId = 1
             };
